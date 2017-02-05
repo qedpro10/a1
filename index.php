@@ -30,9 +30,17 @@
          fclose($file);
          $numQuotes = sizeof($quotes);
          $index = rand(0, $numQuotes-1);
+      ?>
+      <p> <?php echo $quotes[$index][1] ?> </p>
+      <p> <?php
+            if ($quotes[$index][2] != "") {
+               // we have an additional clarification on the author
+               echo "- " . $quotes[$index][0] . ",  " . $quotes[$index][2];
+            }
+            else {
+               echo "- " . $quotes[$index][0];
+            }
          ?>
-         <p> <?php echo $quotes[$index][1] ?> </p>
-         <p> <?php echo "- " . $quotes[$index][0] ?>
       </p>
    </div>
 </body>
