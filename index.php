@@ -9,20 +9,19 @@
 </header>
 <body>
    <?php
-      $index = rand(0, 3);
-      $row = 1;
       if (($file = fopen('includes/quotes.csv', "r")) !== FALSE) {
-         // parse the contents of the file into an Array
-
+         // parse the contents of the file into a 2D Array
          while (($quote = fgetcsv($file, 0, ",")) !== FALSE) {
-            $num = count($quote);
-            $row++;
-            for ($c=0; $c < $num; $c++) {
-               echo $quote[$c] . "<br />\n";
-            }
+            $quotes[] = $quote;
          }
       }
       fclose($file);
+      $numQuotes = sizeof($quotes);
+      echo "numQuotes = " . $numQuotes;
+      $index = rand(0, $numQuotes-1);
+      echo "index = " . $index;
    ?>
+   <p> <?php echo $quotes[$index][1] ?> </p>
+   <p> <?php echo "-" . $quotes[$index][0] ?> </p>
 </body>
 </html>
