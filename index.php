@@ -28,6 +28,7 @@
             }
          }
          fclose($file);
+
          $numQuotes = sizeof($quotes);
          $index = rand(0, $numQuotes-1);
       ?>
