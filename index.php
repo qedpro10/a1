@@ -30,7 +30,7 @@
          fclose($file);
 
          $numQuotes = sizeof($quotes);
-         $index = rand(0, $numQuotes-1);
+         $index = mt_rand(0, $numQuotes-1);
       ?>
       <p> <?php echo $quotes[$index][1] ?> </p>
       <p> <?php
