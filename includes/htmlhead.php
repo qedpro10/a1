@@ -3,5 +3,5 @@
 <meta name="description" content="My Page">
 <meta name="author" content="Jennifer Smith">
 <link rel="icon" type="image/png" href="images/favicon.ico">
-<link href='//fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+<!--link href='//fonts.googleapis.com/css?family=Atma' rel='stylesheet'-->
 <link rel="stylesheet" type="text/css" href="css/myPage.css">

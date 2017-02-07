@@ -10,7 +10,7 @@
       Jen Smith
    </h1>
    <div class="center">
-      <img src="images/jas.jpg" width="300" alt="JAS in 1965"/>
+      <img src="images/jas.jpg" alt="JAS in 1965"/>
    </div>
    <div class="center">
       <h2>A Little About Me</h2>
