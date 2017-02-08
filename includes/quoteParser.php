@@ -8,7 +8,7 @@
    fclose($file);
 
    $numQuotes = sizeof($quotes);
-   $index = rand(0, $numQuotes-1);
+   $index = mt_rand(0, $numQuotes-1);
 
    // init the quote info that needs to be displayed
    $selectedQuote = $quotes[$index][1];
